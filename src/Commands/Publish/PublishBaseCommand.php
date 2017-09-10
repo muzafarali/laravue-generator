@@ -3,6 +3,7 @@
 namespace laraVue\Generator\Commands\Publish;
 
 use File;
+//use laraVue\Generator\Commands\BaseCommand;
 use laraVue\Generator\Commands\BaseCommand;
 
 class PublishBaseCommand extends BaseCommand
