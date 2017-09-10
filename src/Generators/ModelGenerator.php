@@ -1,11 +1,11 @@
 <?php
 
-namespace LaraVue\Generator\Generators;
+namespace InfyOm\Generator\Generators;
 
-use LaraVue\Generator\Common\CommandData;
-use LaraVue\Generator\Common\GeneratorFieldRelation;
-use LaraVue\Generator\Utils\FileUtil;
-use LaraVue\Generator\Utils\TableFieldsGenerator;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Common\GeneratorFieldRelation;
+use InfyOm\Generator\Utils\FileUtil;
+use InfyOm\Generator\Utils\TableFieldsGenerator;
 
 class ModelGenerator extends BaseGenerator
 {
@@ -30,7 +30,7 @@ class ModelGenerator extends BaseGenerator
     /**
      * ModelGenerator constructor.
      *
-     * @param \laravue\Generator\Common\CommandData $commandData
+     * @param \InfyOm\Generator\Common\CommandData $commandData
      */
     public function __construct(CommandData $commandData)
     {
@@ -107,7 +107,7 @@ class ModelGenerator extends BaseGenerator
                 $templateData
             );
             $templateData = str_replace('$SOFT_DELETE$', infy_tab()."use SoftDeletes;\n", $templateData);
-            $deletedAtTimestamp = config('laravue.laravue_generator.timestamps.deleted_at', 'deleted_at');
+            $deletedAtTimestamp = config('infyom.laravel_generator.timestamps.deleted_at', 'deleted_at');
             $templateData = str_replace(
                 '$SOFT_DELETE_DATES$', infy_nl_tab()."protected \$dates = ['".$deletedAtTimestamp."'];\n",
                 $templateData

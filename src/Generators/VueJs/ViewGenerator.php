@@ -1,11 +1,11 @@
 <?php
 
-namespace laraVue\Generator\Generators\VueJs;
+namespace InfyOm\Generator\Generators\VueJs;
 
-use laraVue\Generator\Common\CommandData;
-use laraVue\Generator\Generators\BaseGenerator;
-use laraVue\Generator\Utils\FileUtil;
-use laraVue\Generator\Utils\GeneratorFieldsInputUtil;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Generators\BaseGenerator;
+use InfyOm\Generator\Utils\FileUtil;
+use InfyOm\Generator\Utils\GeneratorFieldsInputUtil;
 
 class ViewGenerator extends BaseGenerator
 {
@@ -25,7 +25,7 @@ class ViewGenerator extends BaseGenerator
     {
         $this->commandData = $commandData;
         $this->path = $commandData->config->pathViews;
-        $this->templateType = config('laravue.laravue_generator.templates', 'core-templates');
+        $this->templateType = config('infyom.laravel_generator.templates', 'core-templates');
     }
 
     public function generate()

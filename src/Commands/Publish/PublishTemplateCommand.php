@@ -1,8 +1,6 @@
 <?php
 
-namespace laraVue\Generator\Commands\Publish;
-
-use laraVue\Generator\Commands\Publish\PublishBaseCommand;
+namespace InfyOm\Generator\Commands\Publish;
 
 class PublishTemplateCommand extends PublishBaseCommand
 {
@@ -11,7 +9,7 @@ class PublishTemplateCommand extends PublishBaseCommand
      *
      * @var string
      */
-    protected $name = 'laravue.publish:templates';
+    protected $name = 'infyom.publish:templates';
 
     /**
      * The console command description.
@@ -30,8 +28,8 @@ class PublishTemplateCommand extends PublishBaseCommand
     public function handle()
     {
         $this->templatesDir = config(
-            'laravue.laravue_generator.path.templates_dir',
-            base_path('resources/laravue/laravue-generator-templates/')
+            'infyom.laravel_generator.path.templates_dir',
+            base_path('resources/infyom/infyom-generator-templates/')
         );
 
         if ($this->publishGeneratorTemplates()) {
@@ -46,7 +44,7 @@ class PublishTemplateCommand extends PublishBaseCommand
     {
         $templatesPath = __DIR__.'/../../../templates';
 
-        return $this->publishDirectory($templatesPath, $this->templatesDir, 'laravue-generator-templates');
+        return $this->publishDirectory($templatesPath, $this->templatesDir, 'infyom-generator-templates');
     }
 
     /**
@@ -54,11 +52,11 @@ class PublishTemplateCommand extends PublishBaseCommand
      */
     public function publishScaffoldTemplates()
     {
-        $templateType = config('laravue.laravue_generator.templates', 'core-templates');
+        $templateType = config('infyom.laravel_generator.templates', 'core-templates');
 
-        $templatesPath = base_path('vendor/laravuelabs/'.$templateType.'/templates/scaffold');
+        $templatesPath = base_path('vendor/infyomlabs/'.$templateType.'/templates/scaffold');
 
-        return $this->publishDirectory($templatesPath, $this->templatesDir.'/scaffold', 'laravue-generator-templates/scaffold', true);
+        return $this->publishDirectory($templatesPath, $this->templatesDir.'/scaffold', 'infyom-generator-templates/scaffold', true);
     }
 
     /**

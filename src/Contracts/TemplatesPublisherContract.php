@@ -1,6 +1,6 @@
 <?php
 
-namespace LaraVue\Generator\Contracts;
+namespace InfyOm\Generator\Contracts;
 
 interface TemplatesPublisherContract
 {

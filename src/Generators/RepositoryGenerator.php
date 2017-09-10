@@ -1,9 +1,9 @@
 <?php
 
-namespace LaraVue\Generator\Generators;
+namespace InfyOm\Generator\Generators;
 
-use LaraVue\Generator\Common\CommandData;
-use LaraVue\Generator\Utils\FileUtil;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Utils\FileUtil;
 
 class RepositoryGenerator extends BaseGenerator
 {

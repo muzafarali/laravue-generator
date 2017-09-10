@@ -1,10 +1,10 @@
 <?php
 
-namespace laraVue\Generator\Commands\API;
+namespace InfyOm\Generator\Commands\API;
 
-use laraVue\Generator\Commands\BaseCommand;
-use laraVue\Generator\Common\CommandData;
-use laraVue\Generator\Generators\API\APIRequestGenerator;
+use InfyOm\Generator\Commands\BaseCommand;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Generators\API\APIRequestGenerator;
 
 class APIRequestsGeneratorCommand extends BaseCommand
 {
@@ -13,7 +13,7 @@ class APIRequestsGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'laravue.api:requests';
+    protected $name = 'infyom.api:requests';
 
     /**
      * The console command description.

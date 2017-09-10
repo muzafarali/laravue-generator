@@ -2,7 +2,7 @@
 
 namespace $NAMESPACE_APP$\Http\Controllers;
 
-use LaraVue\Generator\Utils\ResponseUtil;
+use InfyOm\Generator\Utils\ResponseUtil;
 use Response;
 
 /**

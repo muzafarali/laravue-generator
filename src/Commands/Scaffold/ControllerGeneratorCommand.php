@@ -1,10 +1,10 @@
 <?php
 
-namespace laraVue\Generator\Commands\Scaffold;
+namespace InfyOm\Generator\Commands\Scaffold;
 
-use laraVue\Generator\Commands\BaseCommand;
-use laraVue\Generator\Common\CommandData;
-use laraVue\Generator\Generators\Scaffold\ControllerGenerator;
+use InfyOm\Generator\Commands\BaseCommand;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Generators\Scaffold\ControllerGenerator;
 
 class ControllerGeneratorCommand extends BaseCommand
 {
@@ -13,7 +13,7 @@ class ControllerGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'laravue.scaffold:controller';
+    protected $name = 'infyom.scaffold:controller';
 
     /**
      * The console command description.

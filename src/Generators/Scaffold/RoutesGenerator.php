@@ -1,9 +1,9 @@
 <?php
 
-namespace LaraVue\Generator\Generators\Scaffold;
+namespace InfyOm\Generator\Generators\Scaffold;
 
 use Illuminate\Support\Str;
-use LaraVue\Generator\Common\CommandData;
+use InfyOm\Generator\Common\CommandData;
 
 class RoutesGenerator
 {

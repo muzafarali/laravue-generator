@@ -1,8 +1,8 @@
 <?php
 
-namespace LaraVue\Generator\Utils;
+namespace InfyOm\Generator\Utils;
 
-use LaraVue\Generator\Common\GeneratorField;
+use InfyOm\Generator\Common\GeneratorField;
 
 class HTMLFieldGenerator
 {

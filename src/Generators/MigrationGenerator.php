@@ -1,11 +1,11 @@
 <?php
 
-namespace LaraVue\Generator\Generators;
+namespace InfyOm\Generator\Generators;
 
 use File;
 use Illuminate\Support\Str;
-use LaraVue\Generator\Common\CommandData;
-use LaraVue\Generator\Utils\FileUtil;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Utils\FileUtil;
 use SplFileInfo;
 
 class MigrationGenerator extends BaseGenerator
@@ -19,7 +19,7 @@ class MigrationGenerator extends BaseGenerator
     public function __construct($commandData)
     {
         $this->commandData = $commandData;
-        $this->path = config('laravue.laravue_generator.path.migration', base_path('database/migrations/'));
+        $this->path = config('infyom.laravel_generator.path.migration', base_path('database/migrations/'));
     }
 
     public function generate()

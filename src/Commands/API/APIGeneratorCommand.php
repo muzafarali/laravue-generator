@@ -1,9 +1,9 @@
 <?php
 
-namespace laraVue\Generator\Commands\API;
+namespace InfyOm\Generator\Commands\API;
 
-use laraVue\Generator\Commands\BaseCommand;
-use laraVue\Generator\Common\CommandData;
+use InfyOm\Generator\Commands\BaseCommand;
+use InfyOm\Generator\Common\CommandData;
 
 class APIGeneratorCommand extends BaseCommand
 {
@@ -12,7 +12,7 @@ class APIGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'laravue:api';
+    protected $name = 'infyom:api';
 
     /**
      * The console command description.

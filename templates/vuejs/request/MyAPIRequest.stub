@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests\API;
 
-use LaraVue\Generator\Request\APIRequest;
-use LaraVue\Generator\Utils\ResponseUtil;
+use InfyOm\Generator\Request\APIRequest;
+use InfyOm\Generator\Utils\ResponseUtil;
 use Illuminate\Contracts\Validation\Validator;
 use Response;
 

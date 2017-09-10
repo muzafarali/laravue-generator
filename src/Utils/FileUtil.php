@@ -1,6 +1,6 @@
 <?php
 
-namespace LaraVue\Generator\Utils;
+namespace InfyOm\Generator\Utils;
 
 class FileUtil
 {

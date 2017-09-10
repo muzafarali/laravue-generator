@@ -1,6 +1,6 @@
 <?php
 
-namespace LaraVue\Generator\Common;
+namespace InfyOm\Generator\Common;
 
 use Illuminate\Support\Str;
 

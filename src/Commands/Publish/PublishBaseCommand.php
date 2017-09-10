@@ -1,10 +1,9 @@
 <?php
 
-namespace laraVue\Generator\Commands\Publish;
+namespace InfyOm\Generator\Commands\Publish;
 
-use laraVue\Generator\Commands\BaseCommand;
 use File;
-//use laraVue\Generator\Commands\BaseCommand;
+use InfyOm\Generator\Commands\BaseCommand;
 
 class PublishBaseCommand extends BaseCommand
 {

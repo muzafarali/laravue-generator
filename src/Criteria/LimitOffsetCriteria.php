@@ -1,6 +1,6 @@
 <?php
 
-namespace LaraVue\Generator\Criteria;
+namespace InfyOm\Generator\Criteria;
 
 use Illuminate\Http\Request;
 use Prettus\Repository\Contracts\CriteriaInterface;

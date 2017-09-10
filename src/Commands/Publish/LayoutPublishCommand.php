@@ -1,9 +1,8 @@
 <?php
 
-namespace laraVue\Generator\Commands\Publish;
+namespace InfyOm\Generator\Commands\Publish;
 
-use laraVue\Generator\Commands\Publish\PublishBaseCommand;
-use laraVue\Generator\Utils\FileUtil;
+use InfyOm\Generator\Utils\FileUtil;
 
 class LayoutPublishCommand extends PublishBaseCommand
 {
@@ -12,7 +11,7 @@ class LayoutPublishCommand extends PublishBaseCommand
      *
      * @var string
      */
-    protected $name = 'laravue.publish:layout';
+    protected $name = 'infyom.publish:layout';
 
     /**
      * The console command description.
@@ -35,8 +34,8 @@ class LayoutPublishCommand extends PublishBaseCommand
 
     private function copyView()
     {
-        $viewsPath = config('laravue.laravue_generator.path.views', base_path('resources/views/'));
-        $templateType = config('laravue.laravue_generator.templates', 'core-templates');
+        $viewsPath = config('infyom.laravel_generator.path.views', base_path('resources/views/'));
+        $templateType = config('infyom.laravel_generator.templates', 'core-templates');
 
         $this->createDirectories($viewsPath);
 
@@ -77,7 +76,7 @@ class LayoutPublishCommand extends PublishBaseCommand
 
     private function updateRoutes()
     {
-        $path = config('laravue.laravue_generator.path.routes', app_path('routes/web.php'));
+        $path = config('infyom.laravel_generator.path.routes', app_path('routes/web.php'));
 
         $prompt = 'Existing routes web.php file detected. Should we add standard auth routes? (y|N) :';
         if (file_exists($path) && !$this->confirmOverwrite($path, $prompt)) {
@@ -100,7 +99,7 @@ class LayoutPublishCommand extends PublishBaseCommand
 
         $templateData = $this->fillTemplate($templateData);
 
-        $controllerPath = config('laravue.laravue_generator.path.controller', app_path('Http/Controllers/'));
+        $controllerPath = config('infyom.laravel_generator.path.controller', app_path('Http/Controllers/'));
 
         $fileName = 'HomeController.php';
 
@@ -124,12 +123,12 @@ class LayoutPublishCommand extends PublishBaseCommand
     {
         $templateData = str_replace(
             '$NAMESPACE_CONTROLLER$',
-            config('laravue.laravue_generator.namespace.controller'), $templateData
+            config('infyom.laravel_generator.namespace.controller'), $templateData
         );
 
         $templateData = str_replace(
             '$NAMESPACE_REQUEST$',
-            config('laravue.laravue_generator.namespace.request'), $templateData
+            config('infyom.laravel_generator.namespace.request'), $templateData
         );
 
         return $templateData;

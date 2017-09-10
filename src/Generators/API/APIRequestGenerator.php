@@ -1,10 +1,10 @@
 <?php
 
-namespace LaraVue\Generator\Generators\API;
+namespace InfyOm\Generator\Generators\API;
 
-use LaraVue\Generator\Common\CommandData;
-use LaraVue\Generator\Generators\BaseGenerator;
-use LaraVue\Generator\Utils\FileUtil;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Generators\BaseGenerator;
+use InfyOm\Generator\Utils\FileUtil;
 
 class APIRequestGenerator extends BaseGenerator
 {

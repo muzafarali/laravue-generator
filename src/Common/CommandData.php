@@ -1,11 +1,11 @@
 <?php
 
-namespace LaraVue\Generator\Common;
+namespace InfyOm\Generator\Common;
 
 use Exception;
 use Illuminate\Console\Command;
-use LaraVue\Generator\Utils\GeneratorFieldsInputUtil;
-use LaraVue\Generator\Utils\TableFieldsGenerator;
+use InfyOm\Generator\Utils\GeneratorFieldsInputUtil;
+use InfyOm\Generator\Utils\TableFieldsGenerator;
 
 class CommandData
 {
@@ -201,7 +201,7 @@ class CommandData
                 } elseif (file_exists(base_path($fieldsFileValue))) {
                     $filePath = base_path($fieldsFileValue);
                 } else {
-                    $schemaFileDirector = config('laravue.laravue_generator.path.schema_files');
+                    $schemaFileDirector = config('infyom.laravel_generator.path.schema_files');
                     $filePath = $schemaFileDirector.$fieldsFileValue;
                 }
 

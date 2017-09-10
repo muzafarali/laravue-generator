@@ -1,10 +1,10 @@
 <?php
 
-namespace laraVue\Generator\Generators\Vuejs;
+namespace InfyOm\Generator\Generators\Vuejs;
 
 use Illuminate\Support\Str;
-use laraVue\Generator\Common\CommandData;
-use laraVue\Generator\Generators\BaseGenerator;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Generators\BaseGenerator;
 
 class RoutesGenerator extends BaseGenerator
 {

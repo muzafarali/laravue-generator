@@ -87,8 +87,8 @@ if (!function_exists('get_template_file_path')) {
         $templateName = str_replace('.', '/', $templateName);
 
         $templatesPath = config(
-            'laravue.laravue_generator.path.templates_dir',
-            base_path('resources/laravue/laravue-generator-templates/')
+            'infyom.laravel_generator.path.templates_dir',
+            base_path('resources/infyom/infyom-generator-templates/')
         );
 
         $path = $templatesPath.$templateName.'.stub';
@@ -97,7 +97,7 @@ if (!function_exists('get_template_file_path')) {
             return $path;
         }
 
-        return base_path('vendor/laravuelabs/'.$templateType.'/templates/'.$templateName.'.stub');
+        return base_path('vendor/infyomlabs/'.$templateType.'/templates/'.$templateName.'.stub');
     }
 }
 
@@ -143,7 +143,7 @@ if (!function_exists('fill_field_template')) {
      *
      * @param array                                   $variables
      * @param string                                  $template
-     * @param \LaraVue\Generator\Common\GeneratorField $field
+     * @param \InfyOm\Generator\Common\GeneratorField $field
      *
      * @return string
      */
@@ -164,7 +164,7 @@ if (!function_exists('fill_template_with_field_data')) {
      * @param array                                   $variables
      * @param array                                   $fieldVariables
      * @param string                                  $template
-     * @param \LaraVue\Generator\Common\GeneratorField $field
+     * @param \InfyOm\Generator\Common\GeneratorField $field
      *
      * @return string
      */
@@ -183,7 +183,7 @@ if (!function_exists('fill_template_with_field_data')) {
      * @param array                                   $variables
      * @param array                                   $fieldVariables
      * @param string                                  $template
-     * @param \LaraVue\Generator\Common\GeneratorField $field
+     * @param \InfyOm\Generator\Common\GeneratorField $field
      *
      * @return string
      */

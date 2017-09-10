@@ -1,9 +1,9 @@
 <?php
 
-namespace LaraVue\Generator\Request;
+namespace InfyOm\Generator\Request;
 
 use Illuminate\Foundation\Http\FormRequest;
-use LaraVue\Generator\Utils\ResponseUtil;
+use InfyOm\Generator\Utils\ResponseUtil;
 use Response;
 
 class APIRequest extends FormRequest

@@ -1,27 +1,27 @@
 <?php
 
-namespace LaraVue\Generator\Commands;
+namespace InfyOm\Generator\Commands;
 
 use Illuminate\Console\Command;
-use LaraVue\Generator\Common\CommandData;
-use LaraVue\Generator\Generators\API\APIControllerGenerator;
-use LaraVue\Generator\Generators\API\APIRequestGenerator;
-use LaraVue\Generator\Generators\API\APIRoutesGenerator;
-use LaraVue\Generator\Generators\API\APITestGenerator;
-use LaraVue\Generator\Generators\MigrationGenerator;
-use LaraVue\Generator\Generators\ModelGenerator;
-use LaraVue\Generator\Generators\RepositoryGenerator;
-use LaraVue\Generator\Generators\RepositoryTestGenerator;
-use LaraVue\Generator\Generators\Scaffold\ControllerGenerator;
-use LaraVue\Generator\Generators\Scaffold\MenuGenerator;
-use LaraVue\Generator\Generators\Scaffold\RequestGenerator;
-use LaraVue\Generator\Generators\Scaffold\RoutesGenerator;
-use LaraVue\Generator\Generators\Scaffold\ViewGenerator;
-use LaraVue\Generator\Generators\TestTraitGenerator;
-use LaraVue\Generator\Generators\VueJs\ControllerGenerator as VueJsControllerGenerator;
-use LaraVue\Generator\Generators\VueJs\ModelJsConfigGenerator;
-use LaraVue\Generator\Generators\VueJs\RoutesGenerator as VueJsRoutesGenerator;
-use LaraVue\Generator\Generators\VueJs\ViewGenerator as VueJsViewGenerator;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Generators\API\APIControllerGenerator;
+use InfyOm\Generator\Generators\API\APIRequestGenerator;
+use InfyOm\Generator\Generators\API\APIRoutesGenerator;
+use InfyOm\Generator\Generators\API\APITestGenerator;
+use InfyOm\Generator\Generators\MigrationGenerator;
+use InfyOm\Generator\Generators\ModelGenerator;
+use InfyOm\Generator\Generators\RepositoryGenerator;
+use InfyOm\Generator\Generators\RepositoryTestGenerator;
+use InfyOm\Generator\Generators\Scaffold\ControllerGenerator;
+use InfyOm\Generator\Generators\Scaffold\MenuGenerator;
+use InfyOm\Generator\Generators\Scaffold\RequestGenerator;
+use InfyOm\Generator\Generators\Scaffold\RoutesGenerator;
+use InfyOm\Generator\Generators\Scaffold\ViewGenerator;
+use InfyOm\Generator\Generators\TestTraitGenerator;
+use InfyOm\Generator\Generators\VueJs\ControllerGenerator as VueJsControllerGenerator;
+use InfyOm\Generator\Generators\VueJs\ModelJsConfigGenerator;
+use InfyOm\Generator\Generators\VueJs\RoutesGenerator as VueJsRoutesGenerator;
+use InfyOm\Generator\Generators\VueJs\ViewGenerator as VueJsViewGenerator;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
@@ -38,7 +38,7 @@ class RollbackGeneratorCommand extends Command
      *
      * @var string
      */
-    protected $name = 'laravue:rollback';
+    protected $name = 'infyom:rollback';
     /**
      * The console command description.
      *

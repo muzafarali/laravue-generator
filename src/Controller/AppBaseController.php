@@ -1,9 +1,9 @@
 <?php
 
-namespace LaraVue\Generator\Controller;
+namespace InfyOm\Generator\Controller;
 
 use App\Http\Controllers\Controller as Controller;
-use LaraVue\Generator\Utils\ResponseUtil;
+use InfyOm\Generator\Utils\ResponseUtil;
 use Response;
 
 // @TODO This class need to be removed once we release our first version.

@@ -1,8 +1,8 @@
 <?php
 
-namespace LaraVue\Generator\Generators;
+namespace InfyOm\Generator\Generators;
 
-use LaraVue\Generator\Common\GeneratorField;
+use InfyOm\Generator\Common\GeneratorField;
 
 class SwaggerGenerator
 {

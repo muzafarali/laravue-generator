@@ -1,10 +1,10 @@
 <?php
 
-namespace LaraVue\Generator\Generators\Scaffold;
+namespace InfyOm\Generator\Generators\Scaffold;
 
-use LaraVue\Generator\Common\CommandData;
-use LaraVue\Generator\Generators\BaseGenerator;
-use LaraVue\Generator\Utils\FileUtil;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Generators\BaseGenerator;
+use InfyOm\Generator\Utils\FileUtil;
 
 class ControllerGenerator extends BaseGenerator
 {
@@ -24,7 +24,7 @@ class ControllerGenerator extends BaseGenerator
     {
         $this->commandData = $commandData;
         $this->path = $commandData->config->pathController;
-        $this->templateType = config('laravue.laravue_generator.templates', 'core-templates');
+        $this->templateType = config('infyom.laravel_generator.templates', 'core-templates');
         $this->fileName = $this->commandData->modelName.'Controller.php';
     }
 

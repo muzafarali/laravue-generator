@@ -1,10 +1,10 @@
 <?php
 
-namespace laraVue\Generator\Commands\Common;
+namespace InfyOm\Generator\Commands\Common;
 
-use laraVue\Generator\Commands\BaseCommand;
-use laraVue\Generator\Common\CommandData;
-use laraVue\Generator\Generators\MigrationGenerator;
+use InfyOm\Generator\Commands\BaseCommand;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Generators\MigrationGenerator;
 
 class MigrationGeneratorCommand extends BaseCommand
 {
@@ -13,7 +13,7 @@ class MigrationGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'laravue:migration';
+    protected $name = 'infyom:migration';
 
     /**
      * The console command description.

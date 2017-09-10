@@ -1,9 +1,9 @@
 <?php
 
-namespace laraVue\Generator\Commands\Scaffold;
+namespace InfyOm\Generator\Commands\Scaffold;
 
-use laraVue\Generator\Commands\BaseCommand;
-use laraVue\Generator\Common\CommandData;
+use InfyOm\Generator\Commands\BaseCommand;
+use InfyOm\Generator\Common\CommandData;
 
 class ScaffoldGeneratorCommand extends BaseCommand
 {
@@ -12,7 +12,7 @@ class ScaffoldGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'laravue:scaffold';
+    protected $name = 'infyom:scaffold';
 
     /**
      * The console command description.

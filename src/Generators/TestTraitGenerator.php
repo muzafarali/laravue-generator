@@ -1,10 +1,10 @@
 <?php
 
-namespace LaraVue\Generator\Generators;
+namespace InfyOm\Generator\Generators;
 
-use LaraVue\Generator\Common\CommandData;
-use LaraVue\Generator\Utils\FileUtil;
-use LaraVue\Generator\Utils\GeneratorFieldsInputUtil;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Utils\FileUtil;
+use InfyOm\Generator\Utils\GeneratorFieldsInputUtil;
 
 class TestTraitGenerator extends BaseGenerator
 {

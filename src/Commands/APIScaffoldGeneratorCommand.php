@@ -1,8 +1,8 @@
 <?php
 
-namespace LaraVue\Generator\Commands;
+namespace InfyOm\Generator\Commands;
 
-use LaraVue\Generator\Common\CommandData;
+use InfyOm\Generator\Common\CommandData;
 
 class APIScaffoldGeneratorCommand extends BaseCommand
 {
@@ -11,7 +11,7 @@ class APIScaffoldGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'laravue:api_scaffold';
+    protected $name = 'infyom:api_scaffold';
 
     /**
      * The console command description.

@@ -1,10 +1,10 @@
 <?php
 
-namespace laraVue\Generator\Commands\Common;
+namespace InfyOm\Generator\Commands\Common;
 
-use laraVue\Generator\Commands\BaseCommand;
-use laraVue\Generator\Common\CommandData;
-use laraVue\Generator\Generators\RepositoryGenerator;
+use InfyOm\Generator\Commands\BaseCommand;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Generators\RepositoryGenerator;
 
 class RepositoryGeneratorCommand extends BaseCommand
 {
@@ -13,7 +13,7 @@ class RepositoryGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'laravue:repository';
+    protected $name = 'infyom:repository';
 
     /**
      * The console command description.

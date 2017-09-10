@@ -1,10 +1,10 @@
 <?php
 
-namespace LaraVue\Generator\Generators\API;
+namespace InfyOm\Generator\Generators\API;
 
 use Illuminate\Support\Str;
-use LaraVue\Generator\Common\CommandData;
-use LaraVue\Generator\Generators\BaseGenerator;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Generators\BaseGenerator;
 
 class APIRoutesGenerator extends BaseGenerator
 {

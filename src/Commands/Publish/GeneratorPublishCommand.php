@@ -1,9 +1,8 @@
 <?php
 
-namespace laraVue\Generator\Commands\Publish;
+namespace InfyOm\Generator\Commands\Publish;
 
-use laraVue\Generator\Commands\Publish\PublishBaseCommand;
-use laraVue\Generator\Utils\FileUtil;
+use InfyOm\Generator\Utils\FileUtil;
 
 class GeneratorPublishCommand extends PublishBaseCommand
 {
@@ -12,7 +11,7 @@ class GeneratorPublishCommand extends PublishBaseCommand
      *
      * @var string
      */
-    protected $name = 'laravue:publish';
+    protected $name = 'infyom:publish';
 
     /**
      * The console command description.
@@ -41,8 +40,8 @@ class GeneratorPublishCommand extends PublishBaseCommand
      */
     private function fillTemplate($templateData)
     {
-        $apiVersion = config('laravue.laravue_generator.api_version', 'v1');
-        $apiPrefix = config('laravue.laravue_generator.api_prefix', 'api');
+        $apiVersion = config('infyom.laravel_generator.api_version', 'v1');
+        $apiPrefix = config('infyom.laravel_generator.api_prefix', 'api');
 
         $templateData = str_replace('$API_VERSION$', $apiVersion, $templateData);
         $templateData = str_replace('$API_PREFIX$', $apiPrefix, $templateData);
@@ -57,7 +56,7 @@ class GeneratorPublishCommand extends PublishBaseCommand
     {
         $traitPath = __DIR__.'/../../../templates/test/api_test_trait.stub';
 
-        $testsPath = config('laravue.laravue_generator.path.api_test', base_path('tests/'));
+        $testsPath = config('infyom.laravel_generator.path.api_test', base_path('tests/'));
 
         $this->publishFile($traitPath, $testsPath.'ApiTestTrait.php', 'ApiTestTrait.php');
 

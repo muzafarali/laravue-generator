@@ -1,12 +1,12 @@
 <?php
 
-namespace laraVue\Generator\Commands\API;
+namespace InfyOm\Generator\Commands\API;
 
-use laraVue\Generator\Commands\BaseCommand;
-use laraVue\Generator\Common\CommandData;
-use laraVue\Generator\Generators\API\APITestGenerator;
-use laraVue\Generator\Generators\RepositoryTestGenerator;
-use laraVue\Generator\Generators\TestTraitGenerator;
+use InfyOm\Generator\Commands\BaseCommand;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Generators\API\APITestGenerator;
+use InfyOm\Generator\Generators\RepositoryTestGenerator;
+use InfyOm\Generator\Generators\TestTraitGenerator;
 
 class TestsGeneratorCommand extends BaseCommand
 {
@@ -15,7 +15,7 @@ class TestsGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'laravue.api:tests';
+    protected $name = 'infyom.api:tests';
 
     /**
      * The console command description.

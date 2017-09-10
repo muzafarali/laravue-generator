@@ -1,10 +1,10 @@
 <?php
 
-namespace laraVue\Generator\Generators\VueJs;
+namespace InfyOm\Generator\Generators\VueJs;
 
-use laraVue\Generator\Common\CommandData;
-use laraVue\Generator\Generators\BaseGenerator;
-use laraVue\Generator\Utils\FileUtil;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Generators\BaseGenerator;
+use InfyOm\Generator\Utils\FileUtil;
 
 class ModelJsConfigGenerator extends BaseGenerator
 {

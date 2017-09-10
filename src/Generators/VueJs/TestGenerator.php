@@ -1,10 +1,10 @@
 <?php
 
-namespace laraVue\Generator\Generators\API;
+namespace InfyOm\Generator\Generators\API;
 
-use laraVue\Generator\Common\CommandData;
-use laraVue\Generator\Generators\BaseGenerator;
-use laraVue\Generator\Utils\FileUtil;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Generators\BaseGenerator;
+use InfyOm\Generator\Utils\FileUtil;
 
 class TestGenerator extends BaseGenerator
 {

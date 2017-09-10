@@ -1,18 +1,18 @@
 <?php
 
-namespace laraVue\Generator\Commands\VueJs;
+namespace InfyOm\Generator\Commands\VueJs;
 
-use laraVue\Generator\Commands\BaseCommand;
-use laraVue\Generator\Common\CommandData;
-use laraVue\Generator\Generators\MigrationGenerator;
-use laraVue\Generator\Generators\ModelGenerator;
-use laraVue\Generator\Generators\RepositoryGenerator;
-use laraVue\Generator\Generators\Scaffold\MenuGenerator;
-use laraVue\Generator\Generators\VueJs\APIRequestGenerator;
-use laraVue\Generator\Generators\VueJs\ControllerGenerator;
-use laraVue\Generator\Generators\VueJs\ModelJsConfigGenerator;
-use laraVue\Generator\Generators\VueJs\RoutesGenerator;
-use laraVue\Generator\Generators\VueJs\ViewGenerator;
+use InfyOm\Generator\Commands\BaseCommand;
+use InfyOm\Generator\Common\CommandData;
+use InfyOm\Generator\Generators\MigrationGenerator;
+use InfyOm\Generator\Generators\ModelGenerator;
+use InfyOm\Generator\Generators\RepositoryGenerator;
+use InfyOm\Generator\Generators\Scaffold\MenuGenerator;
+use InfyOm\Generator\Generators\VueJs\APIRequestGenerator;
+use InfyOm\Generator\Generators\VueJs\ControllerGenerator;
+use InfyOm\Generator\Generators\VueJs\ModelJsConfigGenerator;
+use InfyOm\Generator\Generators\VueJs\RoutesGenerator;
+use InfyOm\Generator\Generators\VueJs\ViewGenerator;
 
 class VueJsGeneratorCommand extends BaseCommand
 {
@@ -21,7 +21,7 @@ class VueJsGeneratorCommand extends BaseCommand
      *
      * @var string
      */
-    protected $name = 'laraVue:vuejs';
+    protected $name = 'infyom:vuejs';
 
     /**
      * The console command description.

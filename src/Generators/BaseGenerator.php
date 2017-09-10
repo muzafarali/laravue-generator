@@ -1,8 +1,8 @@
 <?php
 
-namespace LaraVue\Generator\Generators;
+namespace InfyOm\Generator\Generators;
 
-use LaraVue\Generator\Utils\FileUtil;
+use InfyOm\Generator\Utils\FileUtil;
 
 class BaseGenerator
 {
