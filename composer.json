@@ -1,0 +1,63 @@
+{
+    "name": "laravelvue/laravue-generator",
+    "description": "laraVue Generator is a extend version of InfyOm Generator. that i extend for my own requirements ",
+    "keywords": [
+        "laravel",
+        "api",
+        "model",
+        "request",
+        "migration",
+        "model",
+        "crud",
+        "repository",
+        "view",
+        "test",
+        "generator",
+        "swagger"
+    ],
+    "type": "composer-plugin",
+    "require": {
+        "laravel/laravel": "5.5",
+        "php": ">=7.0",
+        "illuminate/support": "~5.0",
+        "prettus/l5-repository": "~2.6",
+        "laracasts/flash": "~3.0",
+        "doctrine/dbal": "~2.3",
+        "infyomlabs/swagger-generator": "dev-master",
+        "jlapp/swaggervel": "dev-master",
+        "laravelcollective/html": "^5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0",
+        "mockery/mockery": "~0.9"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muzafar Ali",
+            "email": "muzafar.ibrahim@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "LaraVue\\Generator\\": "packages/laravue/generator/src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaraVue\\Generator\\LaraVueGeneratorServiceProvider"
+            ]
+        }
+    }
+}
