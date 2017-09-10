@@ -2,6 +2,7 @@
 
 namespace laraVue\Generator\Commands\Publish;
 
+use laraVue\Generator\Commands\Publish\PublishBaseCommand;
 use laraVue\Generator\Utils\FileUtil;
 
 class VueJsLayoutPublishCommand extends PublishBaseCommand

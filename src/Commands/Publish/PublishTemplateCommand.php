@@ -2,6 +2,8 @@
 
 namespace laraVue\Generator\Commands\Publish;
 
+use laraVue\Generator\Commands\Publish\PublishBaseCommand;
+
 class PublishTemplateCommand extends PublishBaseCommand
 {
     /**
