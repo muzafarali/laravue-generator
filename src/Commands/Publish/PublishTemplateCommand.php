@@ -54,7 +54,7 @@ class PublishTemplateCommand extends PublishBaseCommand
     {
         $templateType = config('infyom.laravel_generator.templates', 'core-templates');
 
-        $templatesPath = base_path('vendor/infyomlabs/'.$templateType.'/templates/scaffold');
+        $templatesPath = base_path('vendor/laravelvue/'.$templateType.'/templates/scaffold');
 
         return $this->publishDirectory($templatesPath, $this->templatesDir.'/scaffold', 'infyom-generator-templates/scaffold', true);
     }

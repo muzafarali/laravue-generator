@@ -67,7 +67,7 @@ class GeneratorFieldRelation
         $inputs = $this->inputs;
         $modelName = array_shift($inputs);
 
-        $template = get_template('model.relationship', 'laravel-generator');
+        $template = get_template('model.relationship', 'laravue-generator');
 
         $template = str_replace('$RELATIONSHIP_CLASS$', $relationClass, $template);
         $template = str_replace('$FUNCTION_NAME$', $functionName, $template);
